@@ -1,0 +1,579 @@
+<section class="about " id="about">
+    <div class="about__container">
+      <h2 class="about_title">About <span class="about_underline"></span></h2>
+      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+
+      <div class="about__profile">
+        <img src="images/img/profile/profile-square-1.webp" alt="Eliot Johnson" class="about__profile-image">
+        <h3 class="about__name">Eliot Johnson</h3>
+        <p class="about__tagline">Building meaningful digital experiences through creative code.</p>
+      </div>
+
+      <div class="about__intro">
+        <h4 class="about__headline">Hi, I'm Brandon - a Creative Developer</h4>
+        <p class="about__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique
+          senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+          ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+        </p>
+      </div>
+      </div>
+
+    
+      <div class="about__cards">
+        <div class="about__card">
+          <div class="about__card-icon"> <i class="fas fa-palette"></i></div>
+          <h5 class="about__card-title">UI/UX Design</h5>
+          <p class="about__card-text">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar...</p>
+        </div>
+        <div class="about__card">
+          <div class="about__card-icon"><i class="fas fa-code"></i></div>
+          <h5 class="about__card-title">Frontend Dev</h5>
+          <p class="about__card-text">Cras ultricies ligula sed magna dictum porta.</p>
+        </div>
+        <div class="about__card">
+          <div class="about__card-icon"><i class="fas fa-camera"></i></div>
+          <h5 class="about__card-title">Photography</h5>
+          <p class="about__card-text">Vestibulum ac diam sit amet quam vehicula elementum.</p>
+        </div>
+      </div>
+
+      <div class="about__timeline">
+        <div class="about__timeline-item">
+          <span class="about__timeline-year">2019</span>
+          <p class="about__timeline-text">Graduated with B.A. in Digital Design from Creative University</p>
+        </div>
+        <div class="about__timeline-item">
+          <span class="about__timeline-year">2020</span>
+          <p class="about__timeline-text">Joined InnovateTech as Junior Frontend Developer</p>
+        </div>
+        <div class="about__timeline-item">
+          <span class="about__timeline-year">2023</span>
+          <p class="about__timeline-text">Launched freelance career specializing in creative web solutions</p>
+        </div>
+      </div>
+
+      <div class="about__quote">
+        <p>☕ Coffee-fueled designer based in Portland</p>
+      </div>
+      
+      <div class="about__buttons">
+        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+        <a href="#resume" class="btn btn-outline-primary">Download Resume</a>
+        
+
+      </div>
+    </div>
+  </section>
+
+  <section class="skills ">
+    <div class="skills__container">
+
+      <!-- Row 1 -->
+      <div class="skills__row">
+
+        <!-- Frontend Card -->
+        <div class="skills__card">
+          <h5 class="skills__card-title">
+            <i class="fa-solid fa-code skills__icon"></i> Frontend Development
+          </h5>
+          <div class="skills__item">
+            <div class="skills__label">
+              <span>HTML/CSS</span><span>95%</span>
+            </div>
+            <div class="skills__bar">
+              <div class="skills__progress" style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__label">
+              <span>JavaScript</span><span>88%</span>
+            </div>
+            <div class="skills__bar">
+              <div class="skills__progress" style="width: 88%"></div>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__label">
+              <span>Vue.js</span><span>82%</span>
+            </div>
+            <div class="skills__bar">
+              <div class="skills__progress" style="width: 82%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Card -->
+        <div class="skills__card">
+          <h5 class="skills__card-title">
+            <i class="fa-solid fa-database skills__icon"></i> Backend Development
+          </h5>
+          <div class="skills__item">
+            <div class="skills__label">
+              <span>PHP</span><span>78%</span>
+            </div>
+            <div class="skills__bar">
+              <div class="skills__progress" style="width: 78%"></div>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__label">
+              <span>Laravel</span><span>75%</span>
+            </div>
+            <div class="skills__bar">
+              <div class="skills__progress" style="width: 75%"></div>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__label">
+              <span>MySQL</span><span>72%</span>
+            </div>
+            <div class="skills__bar">
+              <div class="skills__progress" style="width: 72%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="skills__row">
+
+        <!-- Design Card -->
+        <div class="skills__card">
+          <h5 class="skills__card-title">
+            <i class="fa-solid fa-palette skills__icon"></i> Design & Tools
+          </h5>
+          <div class="skills__item">
+            <div class="skills__label">
+              <span>Figma</span><span>85%</span>
+            </div>
+            <div class="skills__bar">
+              <div class="skills__progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__label">
+              <span>Photoshop</span><span>70%</span>
+            </div>
+            <div class="skills__bar">
+              <div class="skills__progress" style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__label">
+              <span>Illustrator</span><span>68%</span>
+            </div>
+            <div class="skills__bar">
+              <div class="skills__progress" style="width: 68%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud DevOps Card -->
+        <div class="skills__card">
+          <h5 class="skills__card-title">
+            <i class="fa-solid fa-cloud skills__icon"></i> Cloud & DevOps
+          </h5>
+          <div class="skills__item">
+            <div class="skills__label">
+              <span>AWS</span><span>76%</span>
+            </div>
+            <div class="skills__bar">
+              <div class="skills__progress" style="width: 76%"></div>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__label">
+              <span>Docker</span><span>73%</span>
+            </div>
+            <div class="skills__bar">
+              <div class="skills__progress" style="width: 73%"></div>
+            </div>
+          </div>
+          <div class="skills__item">
+            <div class="skills__label">
+              <span>Git</span><span>90%</span>
+            </div>
+            <div class="skills__bar">
+              <div class="skills__progress" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="expertise">
+    <div class="container">
+      <h2 class="expertise__title">Professional Expertise</h2>
+      <p class="expertise__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam.
+      </p>
+
+      <div class="expertise__stats">
+        <div class="stat">
+          <div class="stat__icon"><i class="fas fa-trophy"></i></div>
+          <div class="stat__number">5+</div>
+          <div class="stat__label">Years Experience</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat__icon"><i class="fas fa-project-diagram"></i></div>
+          <div class="stat__number">50+</div>
+          <div class="stat__label">Projects Completed</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat__icon"><i class="fas fa-users"></i></div>
+          <div class="stat__number">30+</div>
+          <div class="stat__label">Happy Clients</div>
+        </div>
+      </div>
+
+      <div class="expertise__certifications">
+        <h4>Certifications</h4>
+        <div class="certifications__list">
+          <span class="badge">AWS Certified</span>
+          <span class="badge">Laravel Expert</span>
+          <span class="badge">Vue.js Developer</span>
+          <span class="badge">UI/UX Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+ // scss
+
+ .about {
+ 
+    padding: 2rem 1rem;
+    text-align: center;
+
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    &__headline {
+        color: #003c99;
+    }
+
+    &__underline {
+        display: block;
+        width: 60px;
+        height: 3px;
+        background-color: #0056d2;
+        margin: 0.5rem auto;
+    }
+
+    &__profile {
+        margin-top: 1rem;
+        
+
+
+        &-image {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 4px solid #0056d2;
+            padding: 4px;
+            object-fit: cover;
+        }
+
+        &-name {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        &-tagline {
+            font-size: 0.9rem;
+            color: gray;
+        }
+    }
+
+    &__intro {
+        margin-top: 1.5rem;
+        
+
+        &.about__headline {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        &>.about__description {
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+        
+        
+        
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    &__card {
+        background-color: whitesmoke;
+        padding: 1rem;
+        border-radius: 12px;
+        flex: 1;
+        max-width: 300px;
+        margin: 0 auto;
+
+        &-icon {
+            font-size: 1.5rem;
+            color: #123b78;
+        }
+
+        &-title {
+            font-weight: bold;
+            margin: 0.5rem 0;
+            color: #123b78;
+        }
+
+        &-text {
+            font-size: 0.9rem;
+        }
+    }
+
+    &__timeline {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &-item {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+
+            &>.about__timeline-year {
+                font-weight: bold;
+                color: #0056d2;
+            }
+
+            &>.about__timeline-text {
+                font-size: 0.95rem;
+            }
+        }
+    }
+
+    &__quote {
+        background-color: #f0f4f8;
+        padding: 0.8rem 1rem;
+        margin-top: 2rem;
+        border-radius: 8px;
+        font-size: 0.95rem;
+    }
+
+    &__buttons {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    &__button {
+        padding: 0.6rem 1.2rem;
+        border-radius: 8px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &--primary {
+            background-color: #0056d2;
+            color: white;
+            border: none;
+
+            &:hover {
+                background-color: #003c99;
+            }
+        }
+
+        &--outline {
+            background-color: transparent;
+            color: #0056d2;
+            border: 2px solid #0056d2;
+
+            &:hover {
+                background-color: #e6f0ff;
+            }
+        }
+    }
+}
+
+
+
+
+
+.skills {
+    padding: 2rem 1rem;
+
+    display:flex &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__card {
+        background-color: #fff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        flex: 1;
+    }
+
+    &__card-title {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__icon {
+        color: #0056d2;
+        font-size: 1.3rem;
+    }
+
+    &__item {
+        margin-bottom: 1rem;
+    }
+
+    &__label {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.95rem;
+        margin-bottom: 0.3rem;
+    }
+
+    &__bar {
+        background-color: #e6f0ff;
+        border-radius: 20px;
+        height: 8px;
+        overflow: hidden;
+    }
+
+    &__progress {
+        height: 100%;
+        background-color: #0056d2;
+        border-radius: 20px;
+        transition: width 0.6s ease;
+    }
+}
+
+
+.expertise {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    margin: 2rem auto;
+    max-width: 600px;
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #003366;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        color: #444;
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+    }
+
+    &__stats {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            &__icon {
+                width: 50px;
+                height: 50px;
+                background: #0056b3;
+                color: #fff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+            }
+
+            &__number {
+                font-size: 1.3rem;
+                font-weight: bold;
+                color: #003366;
+            }
+
+            &__label {
+                font-size: 0.85rem;
+                color: #666;
+            }
+        }
+    }
+
+
+
+    &__certifications {
+        h4 {
+            margin-bottom: 1rem;
+            color: #003366;
+        }
+
+        .certifications__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7rem;
+
+            .badge {
+                background: #0056b3;
+                color: white;
+                padding: 0.4rem 1rem;
+                border-radius: 1.5rem;
+                font-size: 0.85rem;
+                font-weight: 500;
+                white-space: nowrap;
+            }
+        }
+    }
+}
