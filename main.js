@@ -10,9 +10,33 @@ closeBtn.addEventListener("click", () => {
     sidebar.classList.remove("open");
 });
 
+//counter
+   document.addEventListener("DOMContentLoaded", () => {
+      const counters = document.querySelectorAll('.counter');
+      const speed = 500; // lower = faster
+
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-target');
+          const count = +counter.innerText;
+
+          const increment = Math.ceil(target / speed);
+
+          if (count < target) {
+            counter.innerText = count + increment;
+            setTimeout(updateCount, 10);
+          } else {
+            counter.innerText = target;
+          }
+        };
+
+        updateCount();
+      });
+    });
+
 
 //hero section
-const words = ["Designer", "Developer", "Freelancer", "Artist"];
+const words = ["Designer|", "Developer|", "Freelancer|", "Artist|"];
 let i = 0;
 let j = 0;
 let currentWord = '';
@@ -43,6 +67,9 @@ function typeEffect() {
 typeEffect();
 //hero section 
 
+
+
+//portfolio section
 document.addEventListener('DOMContentLoaded', function () {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const portfolioItems = document.querySelectorAll('.portfolio-item');
@@ -80,3 +107,4 @@ document.getElementById("scrollBtn").addEventListener("click", function () {
 
 
 
+  

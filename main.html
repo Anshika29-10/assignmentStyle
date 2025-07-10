@@ -8,6 +8,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+
+
 </head>
 
 <body>
@@ -39,8 +43,8 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#resume">Resume</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#testimonial">Testimonials</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -51,10 +55,11 @@
 
 
 
+
   <!--HERO SECTION-->
-  <section class="hero" id="home">
+  <section class="hero" data-aos="zoom-in" data-aos-delay="300" id="home">
     <div class="container hero__container">
-      <div class="hero__content">
+      <div class="hero__content" data-aos="fade-right" data-aos-delay="500">
         <h1 class="hero__title">
           Creative <span class="text-primary" id="typed-text">Designer</span>
         </h1>
@@ -65,15 +70,15 @@
         </p>
         <div class="hero__stats">
           <div>
-            <h3 class="counter" data-target="150">150</h3>
+            <h3 class="counter" data-target="150">0</h3>
             <p>Projects Completed</p>
           </div>
           <div>
-            <h3 class="counter" data-target="5">5</h3>
+            <h3 class="counter" data-target="20">0</h3>
             <p>Years Experience</p>
           </div>
           <div>
-            <h3 class="counter" data-target="98">98</h3>
+            <h3 class="counter" data-target="98">0</h3>
             <p>Happy Clients</p>
           </div>
         </div>
@@ -89,7 +94,7 @@
         </div>
       </div>
 
-      <div class="hero__image-wrapper">
+      <div class="hero__image-wrapper" data-aos="fade-left" data-aos-delay="500">
         <div class="hero__image-card">
           <img src="images/img/profile/profile-square-1.webp" alt="Profile" class="hero__image" />
           <div class="badge badge--top-left">
@@ -109,872 +114,955 @@
 
 
 
+
+
   <!--ABOUT SECTION-->
-  <section class="about section" id="about">
-    <div class="container about__container">
-      <div class="about__image-wrapper">
-        <div class="about__image-card">
-          <img src="images/img/profile/profile-square-1.webp" alt="Profile Photo" class="about__image">
-        </div>
-        <h2 style="font-family:cursive;">Eliot johnson</h2>
-        <p>Building meaningful digital experiences <br> through creative code.</p>
-      </div>
-
-      <div class="about__content">
-        <h1 class="about__title">
-          Hi, I’m <span class="text-primary">Brandon</span> - a Creative Developer
-        </h1>
-        <p class="about__subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et
-          netus et malesuada fames ac turpis egestas.
-        </p>
-
-        <div class="about__services">
-          <div class="card">
-            <i class="fas fa-paint-brush"></i>
-            <h5>UI/UX Design</h5>
-            <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar</p>
-          </div>
-          <div class="card">
-            <i class="fas fa-code"></i>
-            <h5>Frontend Dev</h5>
-            <p>Sed porttitor lectus nibh. Cras ultricies ligula sed magna</p>
-          </div>
-          <div class="card">
-            <i class="fas fa-camera"></i>
-            <h5>Photography</h5>
-            <p>Vestibulum ac diam sit amet quam vehicula elementum</p>
-          </div>
-        </div>
-
-        <div class="about__timeline">
-          <div class="timeline__item">
-            <strong>2019</strong> Graduated with B.A. in Digital Design from Creative University
-          </div>
-          <div class="timeline__item">
-            <strong>2020</strong> Joined InnovateTech as Junior Frontend Developer
-          </div>
-          <div class="timeline__item">
-            <strong>2023</strong> Launched freelance career specializing in creative web solutions
-          </div>
-        </div>
-
-        <div class="about__badge">
-          <i class="fas fa-coffee"></i> Coffee-fueled designer based in Portland
-        </div>
-
-        <div class="about__buttons">
-          <a href="#portfolio" class="btn btn-primary">View My Work</a>
-          <a href="#resume" class="btn btn-outline">Download Resume</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--ABOUT SECTION ENDS-->
-
-
-  
-  
-
-  <!--PART OF ABOUT SECTION-->
-  <section class="part">
-    <div class="container part__container">
-
-      <!-- Left 2x2 Grid -->
-      <div class="part__skills-grid">
-
-        <!-- Frontend Dev -->
-        <div class="part__card">
-          <div class="part__card-header">
-            <i class="icon icon--code"></i>
-            <h3>Frontend Development</h3>
-          </div>
-          <div class="progress-bar">
-            <p>HTML/CSS <span>95%</span></p>
-            <div class="bar">
-              <div class="fill" style="width: 95%;"></div>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <p>JavaScript <span>88%</span></p>
-            <div class="bar">
-              <div class="fill" style="width: 88%;"></div>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <p>Vue.js <span>82%</span></p>
-            <div class="bar">
-              <div class="fill" style="width: 82%;"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Backend Dev -->
-        <div class="part__card">
-          <div class="part__card-header">
-            <i class="icon icon--database"></i>
-            <h3>Backend Development</h3>
-          </div>
-          <div class="progress-bar">
-            <p>PHP <span>78%</span></p>
-            <div class="bar">
-              <div class="fill" style="width: 78%;"></div>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <p>Laravel <span>75%</span></p>
-            <div class="bar">
-              <div class="fill" style="width: 75%;"></div>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <p>MySQL <span>72%</span></p>
-            <div class="bar">
-              <div class="fill" style="width: 72%;"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Design & Tools -->
-        <div class="part__card">
-          <div class="part__card-header">
-            <i class="icon icon--design"></i>
-            <h3>Design & Tools</h3>
-          </div>
-          <div class="progress-bar">
-            <p>Figma <span>85%</span></p>
-            <div class="bar">
-              <div class="fill" style="width: 85%;"></div>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <p>Photoshop <span>70%</span></p>
-            <div class="bar">
-              <div class="fill" style="width: 70%;"></div>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <p>Illustrator <span>68%</span></p>
-            <div class="bar">
-              <div class="fill" style="width: 68%;"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Cloud & DevOps -->
-        <div class="part__card">
-          <div class="part__card-header">
-            <i class="icon icon--cloud"></i>
-            <h3>Cloud & DevOps</h3>
-          </div>
-          <div class="progress-bar">
-            <p>AWS <span>76%</span></p>
-            <div class="bar">
-              <div class="fill" style="width: 76%;"></div>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <p>Docker <span>73%</span></p>
-            <div class="bar">
-              <div class="fill" style="width: 73%;"></div>
-            </div>
-          </div>
-          <div class="progress-bar">
-            <p>Git <span>90%</span></p>
-            <div class="bar">
-              <div class="fill" style="width: 90%;"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Side - Professional Expertise -->
-      <div class="part__expertise">
-        <h3>Professional Expertise</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        <ul class="part__stats">
-          <li><i class="icon icon--trophy"></i><strong>5+</strong> Years Experience</li>
-          <li><i class="icon icon--projects"></i><strong>50+</strong> Projects Completed</li>
-          <li><i class="icon icon--clients"></i><strong>30+</strong> Happy Clients</li>
-        </ul>
-        <div class="part__certifications">
-          <span class="pbadge">AWS CERTIFIED</span>
-          <span class="pbadge">LARAVEL EXPERT</span>
-          <span class="pbadge">VUE.JS DEVELOPER</span>
-          <span class="pbadge">UI/UX DESIGN</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!--PART OF ABIUT SECTION-->
-
-
-
-  <!--RESUME SECTION-->
-  <section class="resume-section py-5" id="resume">
+  <section class="services-section py-5" id="about">
     <div class="container">
-      <div class="resume-header text-center mb-5">
-        <h2 class="resume-title">Resume</h2>
-        <p class="resume-subtitle">
+      <div class="section-header text-center mb-5">
+        <h2 class="section-title">About</h2>
+        <p class="section-subtitle">
           Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
         </p>
       </div>
 
+      <section class="about section py-5" id="about">
+        <div class="container about__container">
+          <div class="about__image-wrapper" data-aos="fade-right" data-aos-delay="300">
+            <div class="about__image-card">
+              <img src="images/img/profile/profile-square-1.webp" alt="Profile Photo" class="about__image">
+            </div>
+            <h2 style="font-family:cursive;">Eliot johnson</h2>
+            <p>Building meaningful digital experiences <br> through creative code.</p>
+          </div>
 
-      <section class="experience-education">
-        <div class="container">
-          <div class="row">
-            <!-- Professional Journey -->
-            <div class="col-md-6">
-              <h2 class="section-title">
-                <i class="fas fa-briefcase"></i> Professional Journey
-              </h2>
-              <p class="section-subtitle">
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas vestibulum
-                tortor quam.
-              </p>
+          <div class="about__content" data-aos="fade-left" data-aos-delay="300">
+            <h1 class="about__title">
+              Hi, I’m <span class="text-primary">Brandon</span> - a Creative Developer
+            </h1>
+            <p class="about__subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et
+              netus et malesuada fames ac turpis egestas.
+            </p>
 
-              <div class="card-box">
-                <h4>Technical Director</h4>
-                <span class="company">Proin Corporation</span>
-                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra
-                  veniam sit amet lacus cursus.</p>
-                <ul>
-                  <li>Managed cross-functional teams of 15+ professionals</li>
-                  <li>Implemented agile methodologies resulting in 40% efficiency gain</li>
-                  <li>Led digital transformation initiatives worth $2M+</li>
-                </ul>
-                <span class="badge">2022 - Present</span>
+            <div class="about__services">
+              <div class="card">
+                <i class="fas fa-paint-brush"></i>
+                <h5>UI/UX Design</h5>
+                <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar</p>
               </div>
-
-              <div class="card-box">
-                <h4>Senior Development Manager</h4>
-                <span class="company">Consectetur Solutions Inc</span>
-                <p>Donec quam felis ultricies nec pellentesque eu pretium quis sem nulla consequat massa quis enim donec
-                  pede justo fringilla vel.</p>
-                <span class="badge">2018 - 2022</span>
+              <div class="card">
+                <i class="fas fa-code"></i>
+                <h5>Frontend Dev</h5>
+                <p>Sed porttitor lectus nibh. Cras ultricies ligula sed magna</p>
               </div>
-
-              <div class="card-box">
-                <h4>Product Development Specialist</h4>
-                <span class="company">Adipiscing Technologies</span>
-                <p>Nam quam nunc blandit vel luctus pulvinar hendrerit id lorem maecenas nec odio et ante tincidunt
-                  tempus
-                  donec vitae sapien ut.</p>
-                <span class="badge">2015 - 2018</span>
+              <div class="card">
+                <i class="fas fa-camera"></i>
+                <h5>Photography</h5>
+                <p>Vestibulum ac diam sit amet quam vehicula elementum</p>
               </div>
             </div>
 
-            <!-- Academic Excellence -->
-            <div class="col-md-6">
-              <h2 class="section-title">
-                <i class="fas fa-graduation-cap"></i> Academic Excellence
-              </h2>
-              <p class="section-subtitle">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit aenean commodo ligula eget dolor aenean massa.
-              </p>
-
-              <div class="timeline">
-                <div class="timeline-item">
-                  <div class="card-box">
-                    <h4>Master of Computer Science</h4>
-                    <span class="company">Tempus University</span>
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec quam
-                      felis
-                      ultricies nec.</p>
-                    <span class="badge">2015 - 2017</span>
-                  </div>
-                </div>
-
-                <div class="timeline-item">
-                  <div class="card-box">
-                    <h4>Bachelor of Information Technology</h4>
-                    <span class="company">Rhoncus Institute of Technology</span>
-                    <p>Nullam dictum felis eu pede mollis pretium integer tincidunt cras dapibus vivamus elementum
-                      semper
-                      nisi aenean vulputate.</p>
-                    <span class="badge">2011 - 2015</span>
-                  </div>
-                </div>
-
-                <div class="timeline-item">
-                  <div class="card-box">
-                    <h4>Certificate in Digital Innovation</h4>
-                    <span class="company">Ligula Academy</span>
-                    <p>Etiam sit amet orci eget eros faucibus tincidunt duis leo sed fringilla mauris sit amet nibh
-                      donec
-                      sodales sagittis magna.</p>
-                    <span class="badge">2020</span>
-                  </div>
-                </div>
+            <div class="about__timeline" data-aos="fade-left" data-aos-delay="300">
+              <div class="timeline__item">
+                <strong>2019</strong> Graduated with B.A. in Digital Design from Creative University
               </div>
+              <div class="timeline__item">
+                <strong>2020</strong> Joined InnovateTech as Junior Frontend Developer
+              </div>
+              <div class="timeline__item">
+                <strong>2023</strong> Launched freelance career specializing in creative web solutions
+              </div>
+            </div>
+
+            <div class="about__badge" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-coffee"></i> Coffee-fueled designer based in Portland
+            </div>
+
+            <div class="about__buttons" data-aos="fade-up" data-aos-delay="300">
+              <a href="#portfolio" class="btn btn-primary">View My Work</a>
+              <a href="#resume" class="btn btn-outline">Download Resume</a>
             </div>
           </div>
         </div>
       </section>
+      <!--ABOUT SECTION ENDS-->
+
+
+
+
+
+      <!--PART OF ABOUT SECTION-->
+      <section class="part">
+        <div class="container part__container">
+
+          <!-- Left 2x2 Grid -->
+          <div class="part__skills-grid">
+
+            <!-- Frontend Dev -->
+            <div class="part__card" data-aos="flip-right" data-aos-delay="300">
+              <div class="part__card-header">
+                <i class="icon icon--code"></i>
+                <h3>Frontend Development</h3>
+              </div>
+              <div class="progress-bar">
+                <p>HTML/CSS <span>95%</span></p>
+                <div class="bar">
+                  <div class="fill" style="width: 95%;"></div>
+                </div>
+              </div>
+              <div class="progress-bar">
+                <p>JavaScript <span>88%</span></p>
+                <div class="bar">
+                  <div class="fill" style="width: 88%;"></div>
+                </div>
+              </div>
+              <div class="progress-bar">
+                <p>Vue.js <span>82%</span></p>
+                <div class="bar">
+                  <div class="fill" style="width: 82%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Backend Dev -->
+            <div class="part__card" data-aos="flip-right" data-aos-delay="300">
+              <div class="part__card-header">
+                <i class="icon icon--database"></i>
+                <h3>Backend Development</h3>
+              </div>
+              <div class="progress-bar">
+                <p>PHP <span>78%</span></p>
+                <div class="bar">
+                  <div class="fill" style="width: 78%;"></div>
+                </div>
+              </div>
+              <div class="progress-bar">
+                <p>Laravel <span>75%</span></p>
+                <div class="bar">
+                  <div class="fill" style="width: 75%;"></div>
+                </div>
+              </div>
+              <div class="progress-bar">
+                <p>MySQL <span>72%</span></p>
+                <div class="bar">
+                  <div class="fill" style="width: 72%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Design & Tools -->
+            <div class="part__card" data-aos="flip-right" data-aos-delay="300">
+              <div class="part__card-header">
+                <i class="icon icon--design"></i>
+                <h3>Design & Tools</h3>
+              </div>
+              <div class="progress-bar">
+                <p>Figma <span>85%</span></p>
+                <div class="bar">
+                  <div class="fill" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="progress-bar">
+                <p>Photoshop <span>70%</span></p>
+                <div class="bar">
+                  <div class="fill" style="width: 70%;"></div>
+                </div>
+              </div>
+              <div class="progress-bar">
+                <p>Illustrator <span>68%</span></p>
+                <div class="bar">
+                  <div class="fill" style="width: 68%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cloud & DevOps -->
+            <div class="part__card" data-aos="flip-right" data-aos-delay="300">
+              <div class="part__card-header">
+                <i class="icon icon--cloud"></i>
+                <h3>Cloud & DevOps</h3>
+              </div>
+              <div class="progress-bar">
+                <p>AWS <span>76%</span></p>
+                <div class="bar">
+                  <div class="fill" style="width: 76%;"></div>
+                </div>
+              </div>
+              <div class="progress-bar">
+                <p>Docker <span>73%</span></p>
+                <div class="bar">
+                  <div class="fill" style="width: 73%;"></div>
+                </div>
+              </div>
+              <div class="progress-bar">
+                <p>Git <span>90%</span></p>
+                <div class="bar">
+                  <div class="fill" style="width: 90%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side - Professional Expertise -->
+          <div class="part__expertise" data-aos="fade-left" data-aos-delay="300">
+            <h3>Professional Expertise</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <ul class="part__stats">
+              <li><i class="icon icon--trophy"></i><strong>5+</strong> Years Experience</li>
+              <li><i class="icon icon--projects"></i><strong>50+</strong> Projects Completed</li>
+              <li><i class="icon icon--clients"></i><strong>30+</strong> Happy Clients</li>
+            </ul>
+            <div class="part__certifications">
+              <span class="pbadge">AWS CERTIFIED</span>
+              <span class="pbadge">LARAVEL EXPERT</span>
+              <span class="pbadge">VUE.JS DEVELOPER</span>
+              <span class="pbadge">UI/UX DESIGN</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!--PART OF ABOUT SECTION-->
+
+
+
       <!--RESUME SECTION-->
-
-
-      <!--SERVICE SECTION-->
-      <section class="services-section py-5" id="services">
+      <section class="services-section py-5" id="resume">
         <div class="container">
           <div class="section-header text-center mb-5">
-            <h2 class="section-title">Services</h2>
+            <h2 class="section-title">Resume</h2>
             <p class="section-subtitle">
               Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
             </p>
           </div>
 
-          <div class="row g-4">
-            <!-- Service Item -->
-            <div class="col-md-6 col-lg-4">
-              <div class="service-card ">
-                <div class="icon"><i class="fas fa-layer-group"></i></div>
-                <h5>Digital Solutions</h5>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam
-                  rem
-                  aperiam eaque ipsa.
-                </p>
-                <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
 
-            <div class="col-md-6 col-lg-4">
-              <div class="service-card">
-                <div class="icon"><i class="fas fa-shield-alt"></i></div>
-                <h5>Secure Systems</h5>
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                  excepteur sint occaecat cupidatat.
-                </p>
-                <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
+          <section class="experience-education">
+            <div class="container">
+              <div class="row">
+                <!-- Professional Journey -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                  <h2 class="section-title">
+                    <i class="fas fa-briefcase"></i> Professional Journey
+                  </h2>
+                  <p class="section-subtitle">
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
+                    vestibulum
+                    tortor quam.
+                  </p>
 
-            <div class="col-md-6 col-lg-4">
-              <div class="service-card">
-                <div class="icon"><i class="fas fa-chart-line"></i></div>
-                <h5>Growth Strategy</h5>
-                <p>
-                  Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur
-                  vel
-                  illum qui dolorem.
-                </p>
-                <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
+                  <div class="card-box">
+                    <h4>Technical Director</h4>
+                    <span class="company">Proin Corporation</span>
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris
+                      viverra
+                      veniam sit amet lacus cursus.</p>
+                    <ul>
+                      <li>Managed cross-functional teams of 15+ professionals</li>
+                      <li>Implemented agile methodologies resulting in 40% efficiency gain</li>
+                      <li>Led digital transformation initiatives worth $2M+</li>
+                    </ul>
+                    <span class="badge">2022 - Present</span>
+                  </div>
 
-            <div class="col-md-6 col-lg-4">
-              <div class="service-card">
-                <div class="icon"><i class="fas fa-microchip"></i></div>
-                <h5>AI Integration</h5>
-                <p>
-                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                  magni
-                  dolores eos qui ratione.
-                </p>
-                <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
+                  <div class="card-box">
+                    <h4>Senior Development Manager</h4>
+                    <span class="company">Consectetur Solutions Inc</span>
+                    <p>Donec quam felis ultricies nec pellentesque eu pretium quis sem nulla consequat massa quis enim
+                      donec
+                      pede justo fringilla vel.</p>
+                    <span class="badge">2018 - 2022</span>
+                  </div>
 
-            <div class="col-md-6 col-lg-4">
-              <div class="service-card">
-                <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
-                <h5>Cloud Services</h5>
-                <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                  deleniti
-                  atque corrupti quos.
-                </p>
-                <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
+                  <div class="card-box">
+                    <h4>Product Development Specialist</h4>
+                    <span class="company">Adipiscing Technologies</span>
+                    <p>Nam quam nunc blandit vel luctus pulvinar hendrerit id lorem maecenas nec odio et ante tincidunt
+                      tempus
+                      donec vitae sapien ut.</p>
+                    <span class="badge">2015 - 2018</span>
+                  </div>
+                </div>
 
-            <div class="col-md-6 col-lg-4">
-              <div class="service-card">
-                <div class="icon"><i class="fas fa-cogs"></i></div>
-                <h5>Process Automation</h5>
-                <p>
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                  placeat facere possimus.
-                </p>
-                <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                <!-- Academic Excellence -->
+                <div class="col-md-6">
+                  <h2 class="section-title" data-aos="fade-left" data-aos-delay="300">
+                    <i class="fas fa-graduation-cap"></i> Academic Excellence
+                  </h2>
+                  <p class="section-subtitle" data-aos="fade-left" data-aos-delay="300">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit aenean commodo ligula eget dolor aenean
+                    massa.
+                  </p>
 
-      <!--SERVICE SECTION-->
+                  <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="250">
+                      <div class="card-box">
+                        <h4>Master of Computer Science</h4>
+                        <span class="company">Tempus University</span>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus donec
+                          quam
+                          felis
+                          ultricies nec.</p>
+                        <span class="badge">2015 - 2017</span>
+                      </div>
+                    </div>
 
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="800">
+                      <div class="card-box">
+                        <h4>Bachelor of Information Technology</h4>
+                        <span class="company">Rhoncus Institute of Technology</span>
+                        <p>Nullam dictum felis eu pede mollis pretium integer tincidunt cras dapibus vivamus elementum
+                          semper
+                          nisi aenean vulputate.</p>
+                        <span class="badge">2011 - 2015</span>
+                      </div>
+                    </div>
 
-      <!--PORTFOLIO-->
-
-      <section class="portfolio-section py-5" id="portfolio">
-        <div class="container">
-          <div class="section-header text-center mb-5">
-            <h2 class="section-title">Portfolio</h2>
-            <p class="section-subtitle">
-              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
-            </p>
-          </div>
-
-          <div class="portfolio-filters text-center mb-4">
-            <button class="filter-btn active" data-filter="all">All Projects</button>
-            <button class="filter-btn" data-filter="uiux">UI/UX</button>
-            <button class="filter-btn" data-filter="development">Development</button>
-
-            <button class="filter-btn" data-filter="photography">Photography</button>
-
-            <button class="filter-btn" data-filter="marketing">Marketing</button>
-
-          </div>
-
-          <div class="row g-4">
-            <!-- Portfolio Item -->
-            <div class="col-md-6 col-lg-3 portfolio-item" data-category="uiux">
-              <div class="portfolio-card">
-                <img src="images/img/portfolio/portfolio-1.webp" alt="Mobile Banking App" class="img-fluid" />
-                <div class="overlay">
-                  <span class="category">UI/UX DESIGN</span>
-                  <h5>Mobile Banking App</h5>
-                  <div class="portfolio-links">
-                    <a href="#" title="View Details"><i class="fas fa-arrow-right"></i></a>
-                    <a href="images/img/portfolio/portfolio-1.webp" title="Preview"><i class="fas fa-expand"></i></a>
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="1200">
+                      <div class="card-box">
+                        <h4>Certificate in Digital Innovation</h4>
+                        <span class="company">Ligula Academy</span>
+                        <p>Etiam sit amet orci eget eros faucibus tincidunt duis leo sed fringilla mauris sit amet nibh
+                          donec
+                          sodales sagittis magna.</p>
+                        <span class="badge">2020</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- Repeat portfolio-item divs with different data-category values -->
-            <div class="col-md-6 col-lg-3 portfolio-item" data-category="photography">
-              <div class="portfolio-card">
-                <img src="images/img/portfolio/portfolio-10.webp" alt="Portfolio 2" class="img-fluid" />
-                <div class="overlay">
-                  <span class="category">Development</span>
-                  <h5>E-Learning Platform</h5>
-                  <div class="portfolio-links">
-                    <a href="#" title="View Details"><i class="fas fa-arrow-right"></i></a>
-                    <a href="images/img/portfolio/portfolio-1.webp" title="Preview"><i class="fas fa-expand"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 portfolio-item" data-category="marketing">
-              <div class="portfolio-card">
-                <img src="images/img/portfolio/portfolio-7.webp" alt="Portfolio 3" class="img-fluid" />
-                <div class="overlay">
-                  <span class="category">Photography</span>
-                  <h5>Urban Architecture</h5>
-                  <div class="portfolio-links">
-                    <a href="#" title="View Details"><i class="fas fa-arrow-right"></i></a>
-                    <a href="images/img/portfolio/portfolio-1.webp" title="Preview"><i class="fas fa-expand"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 portfolio-item" data-category="development">
-              <div class="portfolio-card">
-                <img src="images/img/portfolio/portfolio-4.webp" alt="Portfolio 4" class="img-fluid" />
-                <div class="overlay">
-                  <span class="category">Marketing</span>
-                  <h5>Social Media Campaign</h5>
-                  <div class="portfolio-links">
-                    <a href="#" title="View Details"><i class="fas fa-arrow-right"></i></a>
-                    <a href="images/img/portfolio/portfolio-1.webp" title="Preview"><i class="fas fa-expand"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 portfolio-item" data-category="development">
-              <div class="portfolio-card">
-                <img src="images/img/portfolio/portfolio-2.webp" alt="Portfolio 4" class="img-fluid" />
-                <div class="overlay">
-                  <span class="category">UI/UX DESIGN</span>
-                  <h5>Smart Home Interface</h5>
-                  <div class="portfolio-links">
-                    <a href="#" title="View Details"><i class="fas fa-arrow-right"></i></a>
-                    <a href="images/img/portfolio/portfolio-1.webp" title="Preview"><i class="fas fa-expand"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 portfolio-item" data-category="development">
-              <div class="portfolio-card">
-                <img src="images/img/portfolio/portfolio-11.webp" alt="Portfolio 4" class="img-fluid" />
-                <div class="overlay">
-                  <span class="category">Development</span>
-                  <h5>Cloud Management System</h5>
-                  <div class="portfolio-links">
-                    <a href="#" title="View Details"><i class="fas fa-arrow-right"></i></a>
-                    <a href="images/img/portfolio/portfolio-1.webp" title="Preview"><i class="fas fa-expand"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 portfolio-item" data-category="development">
-              <div class="portfolio-card">
-                <img src="images/img/portfolio/portfolio-8.webp" alt="Portfolio 4" class="img-fluid" />
-                <div class="overlay">
-                  <span class="category">Photocopy</span>
-                  <h5>Nature collection</h5>
-                  <div class="portfolio-links">
-                    <a href="#" title="View Details"><i class="fas fa-arrow-right"></i></a>
-                    <a href="images/img/portfolio/portfolio-1.webp" title="Preview"><i class="fas fa-expand"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-3 portfolio-item" data-category="development">
-              <div class="portfolio-card">
-                <img src="images/img/portfolio/portfolio-5.webp" alt="Portfolio 4" class="img-fluid" />
-                <div class="overlay">
-                  <span class="category">Marketing</span>
-                  <h5>Brand Strategy</h5>
-                  <div class="portfolio-links">
-                    <a href="#" title="View Details"><i class="fas fa-arrow-right"></i></a>
-                    <a href="images/img/portfolio/portfolio-1.webp" title="Preview"><i class="fas fa-expand"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </section>
+          <!--RESUME SECTION-->
 
 
-          </div>
-        </div>
-      </section>
-
-      <!--PORTFOLIO-->
-
-
-
-      <!--TESTIMONIAL SECTION-->
-      <section class="testimonials-section py-5" id="testimonial">
-        <div class="container">
-          <div class="section-header text-center mb-5">
-            <h2 class="section-title">Testimonials</h2>
-            <p class="section-subtitle">
-              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
-            </p>
-          </div>
-
-          <div class="row g-4 mb-4">
-            <!-- Quote-based Testimonials -->
-            <div class="col-md-4">
-              <div class="testimonial-card quote">
-                <div class="quote-icon">“</div>
-                <div class="stars">★★★★★</div>
-                <p class="message">
-                  Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed,
-                  convallis
-                  at tellus.
+          <!--SERVICE SECTION-->
+          <section class="services-section py-5" id="services">
+            <div class="container">
+              <div class="section-header text-center mb-5">
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">
+                  Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
                 </p>
-                <p class="source">The New York Times</p>
               </div>
-            </div>
 
-            <div class="col-md-4">
-              <div class="testimonial-card quote">
-                <div class="quote-icon">“</div>
-                <div class="stars">★★★★☆</div>
-                <p class="message">
-                  Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero
-                  malesuada
-                  feugiat.
-                </p>
-                <p class="source">Washington Post</p>
-              </div>
-            </div>
+              <div class="row g-4">
+                <!-- Service Item -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="service-card ">
+                    <div class="icon"><i class="fas fa-layer-group"></i></div>
+                    <h5>Digital Solutions</h5>
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+                      totam
+                      rem
+                      aperiam eaque ipsa.
+                    </p>
+                    <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
 
-            <div class="col-md-4">
-              <div class="testimonial-card quote">
-                <div class="quote-icon">“</div>
-                <div class="stars">★★★★★</div>
-                <p class="message">
-                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
-                  porttitor
-                  volutpat.
-                </p>
-                <p class="source">The Guardian</p>
-              </div>
-            </div>
-          </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="service-card">
+                    <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                    <h5>Secure Systems</h5>
+                    <p>
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                      pariatur
+                      excepteur sint occaecat cupidatat.
+                    </p>
+                    <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
 
-          <div class="row g-4">
-            <!-- Profile-based Testimonials -->
-            <div class="col-md-4">
-              <div class="testimonial-card profile ">
-                <div class="stars">★★★★☆</div>
-                <p class="message">
-                  Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum
-                  porta.
-                </p>
-                <div class="profile-info d-flex align-items-center mt-3">
-                  <img src="images/img/person/person-f-1.webp" alt="Emily Davis" class="profile-img rounded-circle" />
-                  <div class="ms-3">
-                    <strong class="name">Emily Davis</strong>
-                    <p class="title">Book Club President</p>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="service-card">
+                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                    <h5>Growth Strategy</h5>
+                    <p>
+                      Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                      consequatur
+                      vel
+                      illum qui dolorem.
+                    </p>
+                    <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="service-card">
+                    <div class="icon"><i class="fas fa-microchip"></i></div>
+                    <h5>AI Integration</h5>
+                    <p>
+                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                      magni
+                      dolores eos qui ratione.
+                    </p>
+                    <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="service-card">
+                    <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <h5>Cloud Services</h5>
+                    <p>
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                      deleniti
+                      atque corrupti quos.
+                    </p>
+                    <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="service-card">
+                    <div class="icon"><i class="fas fa-cogs"></i></div>
+                    <h5>Process Automation</h5>
+                    <p>
+                      Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+                      maxime
+                      placeat facere possimus.
+                    </p>
+                    <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
                   </div>
                 </div>
               </div>
             </div>
+          </section>
 
-            <div class="col-md-4">
-              <div class="testimonial-card profile">
-                <div class="stars">★★★★★</div>
-                <p class="message">
-                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere
-                  blandit.
+          <!--SERVICE SECTION-->
+
+
+          <!--PORTFOLIO-->
+
+          <section class="portfolio-section py-5" id="portfolio">
+            <div class="container">
+              <div class="section-header text-center mb-5">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">
+                  Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
                 </p>
-                <div class="profile-info d-flex align-items-center mt-3">
-                  <img src="images/img/person/person-m-2.webp" alt="Robert Wilson" class="profile-img rounded-circle" />
-                  <div class="ms-3">
-                    <strong class="name">Robert Wilson</strong>
-                    <p class="title">Literary Reviewer</p>
+              </div>
+
+              <div class="portfolio-filters text-center mb-4" data-aos="fade-up" data-aos-delay="300">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="uiux">UI/UX</button>
+                <button class="filter-btn" data-filter="development">Development</button>
+
+                <button class="filter-btn" data-filter="photography">Photography</button>
+
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+
+              </div>
+
+              <div class="row g-4" data-aos="fade-up" data-aos-delay="300">
+                <!-- Portfolio Item -->
+                <div class="col-md-6 col-lg-3 portfolio-item" data-category="uiux">
+                  <div class="portfolio-card">
+                    <img src="images/img/portfolio/portfolio-1.webp" alt="Mobile Banking App" class="img-fluid" />
+                    <div class="overlay">
+                      <span class="category">UI/UX DESIGN</span>
+                      <h5>Mobile Banking App</h5>
+                      <div class="portfolio-links">
+                        <a href="details.html" title="View Details"><i class="fas fa-arrow-right"></i></a>
+                        <a href="images/img/portfolio/portfolio-1.webp" title="Preview"><i
+                            class="fas fa-expand"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Repeat portfolio-item divs with different data-category values -->
+                <div class="col-md-6 col-lg-3 portfolio-item" data-category="photography">
+                  <div class="portfolio-card">
+                    <img src="images/img/portfolio/portfolio-10.webp" alt="Portfolio 2" class="img-fluid" />
+                    <div class="overlay">
+                      <span class="category">Development</span>
+                      <h5>E-Learning Platform</h5>
+                      <div class="portfolio-links">
+                        <a href="details.html" title="View Details"><i class="fas fa-arrow-right"></i></a>
+                        <a href="images/img/portfolio/portfolio-1.webp" title="Preview"><i
+                            class="fas fa-expand"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 portfolio-item" data-category="marketing">
+                  <div class="portfolio-card">
+                    <img src="images/img/portfolio/portfolio-7.webp" alt="Portfolio 3" class="img-fluid" />
+                    <div class="overlay">
+                      <span class="category">Photography</span>
+                      <h5>Urban Architecture</h5>
+                      <div class="portfolio-links">
+                        <a href="" title="View Details"><i class="fas fa-arrow-right"></i></a>
+                        <a href="images/img/portfolio/portfolio-1.webp" title="Preview"><i
+                            class="fas fa-expand"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 portfolio-item" data-category="development">
+                  <div class="portfolio-card">
+                    <img src="images/img/portfolio/portfolio-4.webp" alt="Portfolio 4" class="img-fluid" />
+                    <div class="overlay">
+                      <span class="category">Marketing</span>
+                      <h5>Social Media Campaign</h5>
+                      <div class="portfolio-links">
+                        <a href="#" title="View Details"><i class="fas fa-arrow-right"></i></a>
+                        <a href="images/img/portfolio/portfolio-1.webp" title="Preview"><i
+                            class="fas fa-expand"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 portfolio-item" data-category="development">
+                  <div class="portfolio-card">
+                    <img src="images/img/portfolio/portfolio-2.webp" alt="Portfolio 4" class="img-fluid" />
+                    <div class="overlay">
+                      <span class="category">UI/UX DESIGN</span>
+                      <h5>Smart Home Interface</h5>
+                      <div class="portfolio-links">
+                        <a href="#" title="View Details"><i class="fas fa-arrow-right"></i></a>
+                        <a href="images/img/portfolio/portfolio-1.webp" title="Preview"><i
+                            class="fas fa-expand"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 portfolio-item" data-category="development">
+                  <div class="portfolio-card">
+                    <img src="images/img/portfolio/portfolio-11.webp" alt="Portfolio 4" class="img-fluid" />
+                    <div class="overlay">
+                      <span class="category">Development</span>
+                      <h5>Cloud Management System</h5>
+                      <div class="portfolio-links">
+                        <a href="#" title="View Details"><i class="fas fa-arrow-right"></i></a>
+                        <a href="images/img/portfolio/portfolio-1.webp" title="Preview"><i
+                            class="fas fa-expand"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 portfolio-item" data-category="development">
+                  <div class="portfolio-card">
+                    <img src="images/img/portfolio/portfolio-8.webp" alt="Portfolio 4" class="img-fluid" />
+                    <div class="overlay">
+                      <span class="category">Photocopy</span>
+                      <h5>Nature collection</h5>
+                      <div class="portfolio-links">
+                        <a href="#" title="View Details"><i class="fas fa-arrow-right"></i></a>
+                        <a href="images/img/portfolio/portfolio-1.webp" title="Preview"><i
+                            class="fas fa-expand"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 portfolio-item" data-category="development">
+                  <div class="portfolio-card">
+                    <img src="images/img/portfolio/portfolio-5.webp" alt="Portfolio 4" class="img-fluid" />
+                    <div class="overlay">
+                      <span class="category">Marketing</span>
+                      <h5>Brand Strategy</h5>
+                      <div class="portfolio-links">
+                        <a href="#" title="View Details"><i class="fas fa-arrow-right"></i></a>
+                        <a href="images/img/portfolio/portfolio-1.webp" title="Preview"><i
+                            class="fas fa-expand"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </section>
+
+          <!--PORTFOLIO-->
+
+
+
+          <!--TESTIMONIAL SECTION-->
+          <section class="testimonials-section py-5" id="testimonial">
+            <div class="container">
+              <div class="section-header text-center mb-5">
+                <h2 class="section-title">Testimonials</h2>
+                <p class="section-subtitle">
+                  Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+              </div>
+
+              <div class="row g-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <!-- Quote-based Testimonials -->
+                <div class="col-md-4">
+                  <div class="testimonial-card quote">
+                    <div class="quote-icon">“</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="message">
+                      Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed,
+                      convallis
+                      at tellus.
+                    </p>
+                    <p class="source">The New York Times</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="testimonial-card quote">
+                    <div class="quote-icon">“</div>
+                    <div class="stars">★★★★☆</div>
+                    <p class="message">
+                      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero
+                      malesuada
+                      feugiat.
+                    </p>
+                    <p class="source">Washington Post</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="testimonial-card quote">
+                    <div class="quote-icon">“</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="message">
+                      Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
+                      porttitor
+                      volutpat.
+                    </p>
+                    <p class="source">The Guardian</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-4">
+
+
+
+                <!-- Profile-based Testimonials -->
+                <div class="col-md-4">
+                  <div class="testimonial-card profile ">
+                    <div class="stars">★★★★☆</div>
+                    <p class="message">
+                      Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna
+                      dictum
+                      porta.
+                    </p>
+                    <div class="profile-info d-flex align-items-center mt-3">
+                      <img src="images/img/person/person-f-1.webp" alt="Emily Davis"
+                        class="profile-img rounded-circle" />
+                      <div class="ms-3">
+                        <strong class="name">Emily Davis</strong>
+                        <p class="title">Book Club President</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="testimonial-card profile">
+                    <div class="stars">★★★★★</div>
+                    <p class="message">
+                      Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere
+                      blandit.
+                    </p>
+                    <div class="profile-info d-flex align-items-center mt-3">
+                      <img src="images/img/person/person-m-2.webp" alt="Robert Wilson"
+                        class="profile-img rounded-circle" />
+                      <div class="ms-3">
+                        <strong class="name">Robert Wilson</strong>
+                        <p class="title">Literary Reviewer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="testimonial-card profile">
+                    <div class="stars">★★★★★</div>
+                    <p class="message">
+                      Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                    </p>
+                    <div class="profile-info d-flex align-items-center mt-3">
+                      <img src="images/img/person/person-f-3.webp" alt="Jane Smith"
+                        class="profile-img rounded-circle" />
+                      <div class="ms-3">
+                        <strong class="name">Jane Smith</strong>
+                        <p class="title">Book Enthusiast</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </section>
+
+          <!--TESTIMONIAL SECTION-->
+
+
+
+          <!-- TESTIMONIAL ENDCARD SECTION-->
+          <div class="testend" data-aos="fade-up" data-aos-delay="300">
+            <div class="testend__content">
+
+              <h1>4.8</h1>
+
+              <div class="testend__star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+              </div>
+
+              <p>Based on 230+reviews</p>
+
+              <div class="testend__badges">
+                <span>Good reads</span>
+                <span>Amazon</span>
+                <span>Barnes and Nobles</span>
+              </div>
+            </div>
+          </div>
+          <!-- TESTIMONIAL ENDCARD SECTION-->
+
+
+
+          <!--FREQUENTLY ASKED QUESTIONS-->
+          <section class="faq-section container py-5" >
+            <div class="text-center mb-4">
+              <h2 class="faq-section__title">Frequently Asked Questions</h2>
+              <p class="faq-section__subtitle">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+                consectetur
+                velit
+              </p>
+            </div>
+
+            <div class="accordion faq-accordion"data-aos="fade-up" data-aos-delay="300" id="faqAccordion">
+              <div class="accordion-item faq-accordion__item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button faq-accordion__button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Non consectetur a erat nam at lectus urna duis?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-accordion__body">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
+                    gravida.
+                    Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-accordion__item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed faq-accordion__button" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Feugiat scelerisque varius morbi enim nunc faucibus?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-accordion__body">
+                    Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-accordion__item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed faq-accordion__button" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Dolor sit amet consectetur adipiscing elit pellentesque?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-accordion__body">
+                    Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-accordion__item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed faq-accordion__button" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                    aria-controls="collapseFour">
+                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-accordion__body">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-accordion__item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed faq-accordion__button" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                    aria-controls="collapseFive">
+                    Tempus quam pellentesque nec nam aliquam sem et tortor?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-accordion__body">
+                    Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-accordion__item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed faq-accordion__button" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                    aria-controls="collapseSix">
+                    Perspiciatis quod quo quos nulla quo illum ullam?
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                  data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-accordion__body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
                   </div>
                 </div>
               </div>
             </div>
+          </section>
+          <!--FREQUENTLY ASKED QUESTIONS-->
 
-            <div class="col-md-4">
-              <div class="testimonial-card profile">
-                <div class="stars">★★★★★</div>
-                <p class="message">
-                  Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+
+
+          <!--CONTACT SECTION-->
+          <section class="contact" id="contact">
+            <div class="contact__container"><!-- Section Heading -->
+              <div class="contact__heading">
+                <h2 class="contact__title">Contact</h2>
+                <p class="contact__subtitle">
+                  Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
                 </p>
-                <div class="profile-info d-flex align-items-center mt-3">
-                  <img src="images/img/person/person-f-3.webp" alt="Jane Smith" class="profile-img rounded-circle" />
-                  <div class="ms-3">
-                    <strong class="name">Jane Smith</strong>
-                    <p class="title">Book Enthusiast</p>
+              </div>
+
+              <div class="contact__content" data-aos="fade-up" data-aos-delay="300">
+
+                <!-- Contact Info Box -->
+                <div class="contact__info-box">
+                  <h3 class="contact__info-title">Contact Info</h3>
+                  <p class="contact__info-text">
+                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.
+                  </p>
+
+                  <div class="contact__info-item"data-aos="fade-up" data-aos-delay="500">
+                    <i class="fa-solid fa-location-dot contact__icon"></i>
+                    <div>
+                      <h4 class="contact__info-label">Our Location</h4>
+                      <p class="contact__info-detail">A108 Adam Street<br>New York, NY 535022</p>
+                    </div>
+                  </div>
+
+                  <div class="contact__info-item"data-aos="fade-up" data-aos-delay="600">
+                    <i class="fa-solid fa-phone contact__icon"></i>
+                    <div>
+                      <h4 class="contact__info-label">Phone Number</h4>
+                      <p class="contact__info-detail">+1 5589 55488 55<br>+1 6678 254445 41</p>
+                    </div>
+                  </div>
+
+                  <div class="contact__info-item"data-aos="fade-up" data-aos-delay="700">
+                    <i class="fa-solid fa-envelope contact__icon"></i>
+                    <div>
+                      <h4 class="contact__info-label">Email Address</h4>
+                      <p class="contact__info-detail">info@example.com<br>contact@example.com</p>
+                    </div>
                   </div>
                 </div>
+
+                <!-- Get in Touch Form -->
+
+
+
+                <div class="contact__form-box " id="getintouch">
+                  <h3 class="contact__form-title">Get In Touch</h3>
+                  <p class="contact__form-text">
+                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.
+                  </p>
+
+                  <form action="#" class="contact__form" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact__form-row" >
+                      <input type="text" name="name" class="contact__input" placeholder="Your Name" required>
+                      <input type="email" name="email" class="contact__input" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" name="subject" class="contact__input" placeholder="Subject" required>
+                    <textarea name="message" rows="6" class="contact__textarea" placeholder="Message"
+                      required></textarea>
+                    <button type="submit" class="contact__btn">Send Message</button>
+                  </form>
+                </div>
+
               </div>
+
             </div>
-          </div>
+          </section>
 
-
-        </div>
-      </section>
-
-      <!--TESTIMONIAL SECTION-->
-
-      <!--FREQUENTLY ASKED QUESTIONS-->
-      <section class="faq-section container py-5">
-        <div class="text-center mb-4">
-          <h2 class="faq-section__title">Frequently Asked Questions</h2>
-          <p class="faq-section__subtitle">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur
-            velit
-          </p>
-        </div>
-
-        <div class="accordion faq-accordion" id="faqAccordion">
-          <div class="accordion-item faq-accordion__item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button faq-accordion__button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Non consectetur a erat nam at lectus urna duis?
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-              data-bs-parent="#faqAccordion">
-              <div class="accordion-body faq-accordion__body">
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur
-                gravida.
-                Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item faq-accordion__item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed faq-accordion__button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Feugiat scelerisque varius morbi enim nunc faucibus?
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-              data-bs-parent="#faqAccordion">
-              <div class="accordion-body faq-accordion__body">
-                Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item faq-accordion__item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed faq-accordion__button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Dolor sit amet consectetur adipiscing elit pellentesque?
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-              data-bs-parent="#faqAccordion">
-              <div class="accordion-body faq-accordion__body">
-                Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item faq-accordion__item">
-            <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed faq-accordion__button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-              data-bs-parent="#faqAccordion">
-              <div class="accordion-body faq-accordion__body">
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item faq-accordion__item">
-            <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button collapsed faq-accordion__button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                Tempus quam pellentesque nec nam aliquam sem et tortor?
-              </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-              data-bs-parent="#faqAccordion">
-              <div class="accordion-body faq-accordion__body">
-                Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue.
-              </div>
-            </div>
-          </div>
-
-          <div class="accordion-item faq-accordion__item">
-            <h2 class="accordion-header" id="headingSix">
-              <button class="accordion-button collapsed faq-accordion__button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                Perspiciatis quod quo quos nulla quo illum ullam?
-              </button>
-            </h2>
-            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-              data-bs-parent="#faqAccordion">
-              <div class="accordion-body faq-accordion__body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--FREQUENTLY ASKED QUESTIONS-->
+          <!--CONTACT SECTION-->
 
 
 
-      <!--CONTACT SECTION-->
-      <section class="contact" id="contact">
-        <div class="contact__container"><!-- Section Heading -->
-          <div class="contact__heading">
-            <h2 class="contact__title">Contact</h2>
-            <p class="contact__subtitle">
-              Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
-            </p>
-          </div>
-
-          <div class="contact__content">
-
-            <!-- Contact Info Box -->
-            <div class="contact__info-box">
-              <h3 class="contact__info-title">Contact Info</h3>
-              <p class="contact__info-text">
-                Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.
+          <!--FOOTER SECTION-->
+          <footer class="footer">
+            <div class="container text-center">
+              <p class="footer__copyright">
+                Copyright <strong class="footer__brand">Style</strong> All Rights Reserved
               </p>
 
-              <div class="contact__info-item">
-                <i class="fa-solid fa-location-dot contact__icon"></i>
-                <div>
-                  <h4 class="contact__info-label">Our Location</h4>
-                  <p class="contact__info-detail">A108 Adam Street<br>New York, NY 535022</p>
-                </div>
+              <div class="footer__socials d-flex justify-content-center gap-3 mb-3">
+                <a href="#" class="footer__social-link"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="footer__social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="footer__social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="footer__social-link"><i class="fa-brands fa-linkedin"></i></a>
               </div>
 
-              <div class="contact__info-item">
-                <i class="fa-solid fa-phone contact__icon"></i>
-                <div>
-                  <h4 class="contact__info-label">Phone Number</h4>
-                  <p class="contact__info-detail">+1 5589 55488 55<br>+1 6678 254445 41</p>
-                </div>
-              </div>
-
-              <div class="contact__info-item">
-                <i class="fa-solid fa-envelope contact__icon"></i>
-                <div>
-                  <h4 class="contact__info-label">Email Address</h4>
-                  <p class="contact__info-detail">info@example.com<br>contact@example.com</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Get in Touch Form -->
-
-
-
-            <div class="contact__form-box " id="getintouch">
-              <h3 class="contact__form-title">Get In Touch</h3>
-              <p class="contact__form-text">
-                Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.
+              <p class="footer__credits">
+                Designed by <a href="https://bootstrapmade.com/" target="_blank"
+                  rel="noopener noreferrer">BootstrapMade</a>
               </p>
-
-              <form action="#" class="contact__form">
-                <div class="contact__form-row">
-                  <input type="text" name="name" class="contact__input" placeholder="Your Name" required>
-                  <input type="email" name="email" class="contact__input" placeholder="Your Email" required>
-                </div>
-                <input type="text" name="subject" class="contact__input" placeholder="Subject" required>
-                <textarea name="message" rows="6" class="contact__textarea" placeholder="Message" required></textarea>
-                <button type="submit" class="contact__btn">Send Message</button>
-              </form>
             </div>
+          </footer>
 
-          </div>
-
-        </div>
-      </section>
-
-      <!--CONTACT SECTION-->
+          <!--FOOTER SECTION-->
 
 
-
-      <!--FOOTER SECTION-->
-      <footer class="footer">
-        <div class="container text-center">
-          <p class="footer__copyright">
-            Copyright <strong class="footer__brand">Style</strong> All Rights Reserved
-          </p>
-
-          <div class="footer__socials d-flex justify-content-center gap-3 mb-3">
-            <a href="#" class="footer__social-link"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#" class="footer__social-link"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" class="footer__social-link"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="footer__social-link"><i class="fa-brands fa-linkedin"></i></a>
-          </div>
-
-          <p class="footer__credits">
-            Designed by <a href="https://bootstrapmade.com/" target="_blank" rel="noopener noreferrer">BootstrapMade</a>
-          </p>
-        </div>
-      </footer>
-
-      <!--FOOTER SECTION-->
+          <!-- AOS JS -->
+          <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+          <script>
+            AOS.init(); // Initialize AOS
+          </script>
 
 
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="main.js"></script>
+
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="main.js"></script>
+
+
 </body>
 
 </html>
