@@ -1,3 +1,4 @@
+//side bar
 const sidebar = document.getElementById("sidebar");
 const toggleBtn = document.getElementById("sidebarToggle");
 const closeBtn = document.getElementById("sidebarClose");
@@ -35,7 +36,7 @@ closeBtn.addEventListener("click", () => {
     });
 
 
-//hero section
+//hero section displaying words
 const words = ["Designer|", "Developer|", "Freelancer|", "Artist|"];
 let i = 0;
 let j = 0;
@@ -65,7 +66,7 @@ function typeEffect() {
 }
 
 typeEffect();
-//hero section 
+
 
 
 
@@ -96,6 +97,24 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+//testimonial carousel section
+  const track = document.querySelector('.testimonial-track');
+  const dots = document.querySelectorAll('.carousel-dots .dot');
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      dots.forEach(d => d.classList.remove('active'));
+      dot.classList.add('active');
+
+      const index = parseInt(dot.getAttribute('data-index'));
+      const offset = (100 / 3) * index; // 3 cards visible
+      track.style.transform = `translateX(-${offset}%)`;
+    });
+  });
+
+
 
 
 

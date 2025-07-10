@@ -256,10 +256,11 @@
 }
 
 .about {
-  padding: 100px 0;
+  padding: 0px 0;
   background-size: cover;
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
 }
 .about::before {
   content: "";
@@ -322,6 +323,7 @@
 }
 .about__services .card {
   flex: 1 1 30%;
+  min-width: 0;
   padding: 1rem;
   border-radius: 0.75rem;
   border: 1px solid #e0e0e0;
@@ -435,7 +437,6 @@
 }
 .badge--top-left {
   top: 10px;
-  left: -30px;
 }
 
 .part {
@@ -886,6 +887,75 @@
   height: 10px;
 }
 
+.testimonial-carousel {
+  overflow: hidden;
+  position: relative;
+}
+.testimonial-carousel .testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 133.3333333333%;
+}
+.testimonial-carousel .testimonial-card {
+  background: #f9fcff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  margin: 0 10px;
+  flex: 0 0 33.3333333333%;
+  box-sizing: border-box;
+}
+.testimonial-carousel .testimonial-card:hover {
+  transform: translateY(-8px);
+}
+.testimonial-carousel .testimonial-card .stars {
+  color: #fbbf24;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.testimonial-carousel .testimonial-card .message {
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+.testimonial-carousel .testimonial-card .profile-info {
+  display: flex;
+  align-items: center;
+}
+.testimonial-carousel .testimonial-card .profile-info .profile-img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial-carousel .testimonial-card .profile-info .name {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+.testimonial-carousel .testimonial-card .profile-info .title {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: -4px;
+}
+.testimonial-carousel .carousel-dots {
+  margin-top: 1rem;
+}
+.testimonial-carousel .carousel-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.testimonial-carousel .carousel-dots .dot.active {
+  background-color: #2563eb;
+}
+
 .testend {
   display: flex;
   justify-content: center;
@@ -958,7 +1028,7 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 .contact__info-box {
-  background-color: #0d6efd;
+  background-color: #0859c6;
   color: #fff;
   border-radius: 10px;
 }
@@ -1111,4 +1181,9 @@
 }
 .page__right {
   width: 50%;
+  margin: 10px;
+}
+
+.carousel {
+  margin: 20px;
 }/*# sourceMappingURL=main.css.map */
